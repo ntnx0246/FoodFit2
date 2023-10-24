@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreditsActivity">
+
+    <TextView
+        android:id="@+id/creditsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Credits"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sourcesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="408dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Sources"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/responsibilitesText"
+        android:layout_width="353dp"
+        android:layout_height="244dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:text="Responsibilities:\n\nBenjamin: UI and design (logo), Homescreen page, Goals Page, Recipes Page, Credits Page, and Slides
+\n\nShawn: Log-in System, Database Incorporation"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <TextView
+        android:id="@+id/sourcesMultiText"
+        android:layout_width="355dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:text="“Benefits of Healthy Eating.” Centers for Disease Control and Prevention, 16 May 2021, www.cdc.gov/nutrition/resources-publications/benefits-of-healthy-eating.html.\n“Recipes.” Allrecipes, www.allrecipes.com/recipes/. Accessed 17 May 2023.\nAcademy of Nutrition and Dietetics, www.eatright.org/. Accessed 17 May 2023.\nNutrition.Gov, www.nutrition.gov/. Accessed 17 May 2023.\n“Nutrition and Healthy Eating Nutrition Basics.” Mayo Clinic, 19 Nov. 2021, www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/basics/nutrition-basics/hlv-20049477.\n“Nutrition.” World Health Organization, www.who.int/health-topics/nutrition. Accessed 17 May 2023.\n“Healthy Eating.” Www.Heart.Org, www.heart.org/en/healthy-living/healthy-eating. Accessed 17 May 2023.\n“Healthy Eating, Nutrition, and Diet.” National Institute on Aging, www.nia.nih.gov/health/healthy-eating. Accessed 17 May 2023. "
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sourcesText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

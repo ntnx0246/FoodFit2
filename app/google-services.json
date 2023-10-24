@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "559914801227",
+    "project_id": "foodfit-d038f",
+    "storage_bucket": "foodfit-d038f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559914801227:android:2048423420a9b1e34e15ce",
+        "android_client_info": {
+          "package_name": "com.example.foodfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559914801227-ks21kabj346ka0j1dkuipua0fnf0j6om.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNc4nhgxqA-uxuoljJT9ysZmnhhfYcU4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559914801227-ks21kabj346ka0j1dkuipua0fnf0j6om.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

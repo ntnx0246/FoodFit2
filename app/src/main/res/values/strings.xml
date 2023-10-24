@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">FoodFit</string>
+    <string name="link">
+         <a href="https://www.allrecipes.com/recipes/"> Click here to find additional recipes.</a>
+    </string>
+
+    <string name="link2">
+         <a href="https://www.eatright.org/"> Eatright.org</a> provides evidence-based information on nutrition, healthy eating, and resources for dietitians.
+    </string>
+
+    <string name="link3">
+         <a href="https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/basics/nutrition-basics/hlv-20049477"> Mayoclinic.org</a> Offers reliable nutrition information, healthy recipes, and practical tips for maintaining a balanced diet.
+    </string>
+
+    <string name="link4">
+         <a href="https://www.nutrition.gov/"> Nutrition.gov</a> A comprehensive resource for nutrition education and guidance, providing access to credible information from various government agencies.
+    </string>
+
+    <string name="link5">
+         <a href="https://www.who.int/health-topics/nutrition"> World Health Organization (WHO)</a> provides global guidelines, reports, and resources on nutrition and healthy eating habits.
+    </string>
+
+    <string name="link6">
+         <a href="https://www.heart.org/en/healthy-living/healthy-eating"> Heart.org</a> Offers resources and tips for heart-healthy eating, including recipes and guidance on reducing sodium and saturated fats.
+    </string>
+
+    <string name="link7">
+         <a href="https://www.nia.nih.gov/health/healthy-eating"> NIH.gov</a> Provides information on nutrition for older adults, including tips on maintaining a healthy diet as we age.
+    </string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login_now" />
+    <string name="click_here_to_register" />
+    <string name="register_here">Register Here!</string>
+    <string name="FoodFit">Food Fit</string>
+    <string name="Creators">Created by Benjamin Thai and Shawn Gazin</string>
+    <string name="APIActivity">APIActivity</string>
+    <string name="browse_title">Videos by Your Company</string>
+    <string name="related_movies">Related Videos</string>
+    <string name="grid_view">Grid View</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+</resources>

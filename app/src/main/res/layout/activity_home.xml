@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:id="@+id/homeAppText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Food Fit"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sloganText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="28dp"
+        android:text="&quot; Nourish your body, elevate your life.&quot;"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/nameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="casual"
+        android:text="By: Shawn Gazin and Benjamin Thai"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeAppText" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="80dp"
+        android:layout_height="99dp"
+        android:fontFamily="casual"
+        android:text="Welcome, "
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="263dp"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />>
+
+    <ImageButton
+        android:id="@+id/recipesButton"
+        android:layout_width="108dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="56dp"
+        android:background="#7966C13F"
+        android:onClick="recipesEventRunner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/recipes_icon"
+        tools:srcCompat="@mipmap/recipes_icon" />
+
+    <ImageButton
+        android:id="@+id/resourceButton"
+        android:layout_width="108dp"
+        android:layout_height="119dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="140dp"
+        android:background="#79E3822D"
+        android:onClick="additionalResourcesEventRunner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/resource_icon"
+        tools:srcCompat="@mipmap/resource_icon" />
+
+    <TextView
+        android:id="@+id/additionalResourcesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="42dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Additional Resources"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/goalsText2"
+        app:layout_constraintTop_toBottomOf="@+id/resourceButton"
+        app:layout_constraintVertical_bias="0.248" />
+
+    <TextView
+        android:id="@+id/recipesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Recipes"
+        app:layout_constraintBottom_toTopOf="@+id/resourceButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/benefitsText"
+        app:layout_constraintTop_toBottomOf="@+id/recipesButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/goalButton"
+        android:layout_width="111dp"
+        android:layout_height="118dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="140dp"
+        android:background="#79C54343"
+        android:onClick="goalEventRunner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/resourceButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_goal_launcher_foreground"
+        tools:srcCompat="@drawable/ic_goal_launcher_foreground" />
+
+    <ImageButton
+        android:id="@+id/benfitInfoButton"
+        android:layout_width="108dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="92dp"
+        android:background="#792D84E3"
+        android:onClick="benefitsEventRunner"
+        app:layout_constraintBottom_toTopOf="@+id/goalButton"
+        app:layout_constraintEnd_toStartOf="@+id/recipesButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/health_icon"
+        tools:srcCompat="@mipmap/health_icon" />
+
+    <TextView
+        android:id="@+id/benefitsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Benefits "
+        app:layout_constraintBottom_toTopOf="@+id/goalButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/benfitInfoButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/goalsText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Set Your Goals"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goalButton"
+        app:layout_constraintVertical_bias="0.248" />
+
+    <Button
+        android:id="@+id/creditsButton"
+        android:layout_width="105dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="creditsEventRunner"
+        android:text="Credits"
+        android:backgroundTint="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="105dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/black"
+        android:onClick="creditsEventRunner"
+        android:text="Logout"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/apiButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:text="Fetch Nutrition"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

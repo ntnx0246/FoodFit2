@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BenefitsActivity">
+
+    <TextView
+        android:id="@+id/benefitsInfoText"
+        android:layout_width="375dp"
+        android:layout_height="334dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:gravity="start|top"
+        android:text="•May help you live longer\n•Keeps skin, teeth, and eyes healthy \n•Supports muscles\n•Boosts\n•immunityStrengthens bones\n•Lowers risk of heart disease, type 2 diabetes, and some cancers\n•Supports healthy pregnancies and breastfeeding\n•Helps the digestive system function\n•Helps achieve and maintain a healthy weight"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <ImageView
+        android:id="@+id/benefitAdultImage"
+        android:layout_width="166dp"
+        android:layout_height="437dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="388dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/adult" />
+
+    <ImageView
+        android:id="@+id/benefitChildrenImage"
+        android:layout_width="172dp"
+        android:layout_height="440dp"
+        android:layout_marginTop="388dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toEndOf="@+id/benefitAdultImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/children" />
+
+    <TextView
+        android:id="@+id/benefitTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Benefits"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/benefitsInfoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
