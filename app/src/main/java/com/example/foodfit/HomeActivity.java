@@ -8,8 +8,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.ml.modeldownloader.CustomModel;
+import com.google.firebase.ml.modeldownloader.CustomModelDownloadConditions;
+import com.google.firebase.ml.modeldownloader.DownloadType;
+import com.google.firebase.ml.modeldownloader.FirebaseModelDownloader;
+
+import org.tensorflow.lite.Interpreter;
+
+import java.io.File;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -17,6 +26,7 @@ public class HomeActivity extends AppCompatActivity {
     Button button;
     TextView textView;
     FirebaseUser user;
+
 Button apiButton;  // Declare the apiButton here
 
     @Override
@@ -53,7 +63,7 @@ Button apiButton;  // Declare the apiButton here
         apiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent apiIntent = new Intent(HomeActivity.this, APIActivity.class);
+                Intent apiIntent = new Intent(HomeActivity.this, CameraActivity.class);
                 startActivity(apiIntent);
             }
         });
